@@ -34,8 +34,8 @@ window.addEventListener('keydown', async (e) => {
     // add symbol
     process = true;
       await setTimeout(() => {
-      writerValue = writer.innerText = writerValue + e.key;
-      audioKey.play();
+        audioKey.play();
+        writerValue = writer.innerText = writerValue + e.key;
     }, 400)
     audioKey.pause();
     process = false;
